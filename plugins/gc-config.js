@@ -6,12 +6,12 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   const tradutor = _translate.plugins.gc_config
 
   const isClose = { // Switch Case Like :v
-    'open': 'not_announcement',
-    'close': 'announcement',
-    'abierto': 'not_announcement',
-    'cerrado': 'announcement',
-    'abrir': 'not_announcement',
-    'cerrar': 'announcement',
+    'open': 'El grupo ha sido abierto con exito',
+    'close': 'El grupo ha sido cerrado con exito',
+    'abierto': 'El grupo ha sido abierto con exito',
+    'cerrado': 'El grupo ha sido cerrrado con exito',
+    'abrir': 'El grupo ha sido abierto con exito',
+    'cerrar': 'El grupo ha sido cerrado con exito',
   }[(args[0] || '')];
   if (isClose === undefined) {
     throw `
